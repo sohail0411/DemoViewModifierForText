@@ -42,7 +42,8 @@ public func body(content: Content) -> some View {
 @available(iOS 13.0, *)
 public  extension View {
 @available(iOS 13.0, *)
-    public    func e2eHiringTextModifier(with font: Font,backgroundColor:Color,width:CGFloat,height:CGFloat,alignment:Alignment,cornerRadius:CGFloat) -> some View {
+
+public    func e2eHiringTextModifier(with font: Font,backgroundColor:Color,width:CGFloat,height:CGFloat,alignment:Alignment,cornerRadius:CGFloat) -> some View {
         
         modifier(CustomeViewModifierForText(font: font, backgroundColor: backgroundColor, width: width, height: height, alignment: alignment, cornerRadius: cornerRadius))
     }
