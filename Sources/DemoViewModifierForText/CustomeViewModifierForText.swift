@@ -37,10 +37,6 @@ public func body(content: Content) -> some View {
   }
 }
 
-
-
-
-
 @available(iOS 13.0, *)
 extension View {
     @available(iOS 13.0, *)
