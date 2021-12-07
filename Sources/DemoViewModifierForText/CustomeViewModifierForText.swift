@@ -10,13 +10,22 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct CustomeViewModifierForText: ViewModifier {
-  let font:Font
-  let backgroundColor:Color
-  let width:CGFloat
-  let height:CGFloat
-  let alignment:Alignment
-  let cornerRadius:CGFloat
+  var font:Font
+  var backgroundColor:Color
+  var width:CGFloat
+  var height:CGFloat
+  var alignment:Alignment
+  var cornerRadius:CGFloat
     
+    public  init(font: Font, backgroundColor: Color, width: CGFloat,height:CGFloat,alignment:Alignment,cornerRadius:CGFloat) {
+           self.font = font
+           self.backgroundColor = backgroundColor
+           self.width = width
+           self.height = height
+           self.alignment = alignment
+           self.cornerRadius = cornerRadius
+
+       }
  
 public func body(content: Content) -> some View {
     content
