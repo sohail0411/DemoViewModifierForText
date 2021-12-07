@@ -16,8 +16,8 @@ public struct CustomeViewModifierForText: ViewModifier {
   var height:CGFloat
   var alignment:Alignment
   var cornerRadius:CGFloat
-    
-    public  init(font: Font, backgroundColor: Color, width: CGFloat,height:CGFloat,alignment:Alignment,cornerRadius:CGFloat) {
+
+public  init(font: Font, backgroundColor: Color, width: CGFloat,height:CGFloat,alignment:Alignment,cornerRadius:CGFloat) {
            self.font = font
            self.backgroundColor = backgroundColor
            self.width = width
