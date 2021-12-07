@@ -36,3 +36,16 @@ public func body(content: Content) -> some View {
       .cornerRadius(5.0)
   }
 }
+
+
+
+
+
+@available(iOS 13.0, *)
+extension View {
+    @available(iOS 13.0, *)
+    func e2eHiringTextModifier(with font: Font,backgroundColor:Color,width:CGFloat,height:CGFloat,alignment:Alignment,cornerRadius:CGFloat) -> some View {
+        
+        modifier(CustomeViewModifierForText(font: font, backgroundColor: backgroundColor, width: width, height: height, alignment: alignment, cornerRadius: cornerRadius))
+    }
+}
